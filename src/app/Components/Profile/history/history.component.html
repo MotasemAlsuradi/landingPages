@@ -1,0 +1,21 @@
+<div class="bg-body-tertiary my-5 shadow rounded-4">
+  <nav class="navbar">
+    <a class="navbar-brand ms-3">
+      <fa-icon [icon]="faListCheck" class="text-success me-1"></fa-icon>
+      History
+    </a>
+  </nav>
+  <div class="line"></div>
+
+  <div class="d-flex flex-wrap">
+    <ng-container *ngFor="let record of historyData">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <app-history-card [record]="record"></app-history-card>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="d-flex justify-content-end">
+    <a class="btn btn-link fw-bold text-success text-decoration-none mb-3" (click)="goToVacationPage()" role="button">View More ></a>
+  </div>
+</div>

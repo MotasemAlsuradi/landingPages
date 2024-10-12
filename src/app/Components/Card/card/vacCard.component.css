@@ -1,0 +1,13 @@
+.card-img-top{
+  width: 40% !important;
+  border-radius: 50% !important;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card h5{
+  text-align: center;
+}
+.card .btn{
+  text-align: center;
+  padding: 0 27px;
+}
